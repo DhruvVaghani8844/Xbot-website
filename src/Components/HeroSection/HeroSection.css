@@ -1,0 +1,238 @@
+.hero_container {
+    height: calc(100svh - 77px - 1.5rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.hero_outline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hero_outline_logo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-self: center;
+    width: 100%;
+    align-items: center;
+}
+
+
+.hero_outline_logo h2 {
+    font-size: 15em;
+    cursor: default;
+    -webkit-text-fill-color: transparent;
+    color: rgba(106, 110, 111, 0.237);
+    -webkit-text-stroke-width: 2px;
+}
+
+.hero-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.hero-details>* {
+    margin: 0;
+    max-width: 390px;
+    text-align: center;
+}
+
+.hero-details h1 {
+    font-size: 1.75rem;
+    font-weight: 300;
+    color: white;
+}
+
+.md-canva-text {
+    display: none;
+}
+
+.hero-details-button {
+    border: 1px solid #575b5d;
+    border-radius: 2px;
+    background: #e7e8e8;
+    color: #0f1518;
+    flex: 0 0 50px;
+    width: 100%;
+    font-size: 1.25rem;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+
+
+.hero_outline-logo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-self: center;
+    width: 100%;
+}
+
+/* Animation */
+
+.xbot-outline_outline__pwT8v {
+    position: relative;
+    z-index: 10;
+}
+
+.xbot-outline_gradient {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, #6f7374, #0f1518) 0 0;
+    opacity: .5;
+    animation: xbot-outline_gradient__7rtND 4s linear forwards;
+    z-index: 3;
+}
+
+.xbot-outline_dash__8_zAL {
+    stroke: #000;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    animation: xbot-outline_dash__8_zAL 2.5s linear forwards;
+    animation-delay: .25s;
+    stroke-width: 1px;
+}
+
+
+.xbot-outline_mouseMask__7FiGB {
+    top: -100px;
+    left: -100px;
+    width: 200px;
+    height: 200px;
+    background: red;
+    position: absolute;
+    z-index: 6;
+    overflow: hidden;
+    transition: transform 1.5s ease, background-color 1.5s linear;
+    animation: xbot-outline_mask__8fqxa 2s linear forwards;
+    animation-delay: 2s;
+    opacity: 0;
+    mix-blend-mode: lighten;
+    transform: translate(43%, 32%);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.xbot-outline_mouseMask__7FiGB.xbot-outline_second__bX4_B {
+    transition: transform 1.65s ease, background-color 1.65s linear;
+}
+
+
+.xbot-outline_mouseMask__7FiGB.xbot-outline_third__zcD0B {
+    transition: transform 1.8s ease, background-color 1.8s linear;
+}
+
+.hero_outline-logo:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid #050505;
+    z-index: 10;
+}
+
+
+.xbot-outline_outline__pwT8v.xbot-outline_xs__3_aKz {
+    display: none;
+}
+
+
+/* animation end */
+
+
+
+/* effect animation */
+
+@keyframes xbot-outline_dash__8_zAL {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+@keyframes xbot-outline_gradient__7rtND {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: .4;
+    }
+}
+
+
+@keyframes xbot-outline_mask__8fqxa {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* effect animation */
+
+
+
+
+/* responsive */
+
+
+@media (max-width:1025px) {
+    .canvas {
+        width: 1050px;
+    }
+}
+
+@media (max-width: 770px) {
+    .canvas {
+        width: 680px;
+    }
+
+    .hero_container {
+        gap: 11rem;
+    }
+
+    .xbot-outline_outline__pwT8v.xbot-outline_xs__3_aKz {
+        display: block;
+    }
+
+    .xbot-outline_outline__pwT8v {
+        display: none;
+    }
+}
+
+
+
+@media (max-width:640px) {
+    .canvas {
+        display: none;
+    }
+
+    .md-canva-text {
+        display: block;
+    }
+}
