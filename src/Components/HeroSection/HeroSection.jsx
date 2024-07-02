@@ -3,6 +3,7 @@ import "./HeroSection.css";
 
 // Componets
 import HeroSVG from "../../SubComponents/HeroSection/HeroSVG.jsx";
+import whatsapp from "../../assets/social_logos/whatsapp (1).svg"
 
 const HeroSection = () => {
   const requestRef = useRef(null);
@@ -85,7 +86,8 @@ const HeroSection = () => {
         <section className="hero-details">
           <h1>Connect - Engage - Convert</h1>
           <a href="#" className="hero-details-button">
-            <span>Official Whatsapp Business API [symbol]</span>
+            <img src={whatsapp} alt="" />
+            <span>Official Whatsapp Business API</span>
           </a>
         </section>
       </section>

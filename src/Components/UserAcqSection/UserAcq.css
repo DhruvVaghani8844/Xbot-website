@@ -1,3 +1,8 @@
+.userAcq-Section{
+    background-color: #ebebeb;
+    color: black;
+}
+
 .U-heading{
     display: flex;
     gap: 3rem;
@@ -5,13 +10,13 @@
     text-align: center;
     justify-content: center;
     margin: 12rem 0 -1rem;
-    color: #fff;
+
     letter-spacing: .01em;
     line-height: 1.3;
 }
 
 .U-heading-p{
-    color: #fff;
+
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -20,12 +25,13 @@
 .U-contain-box{
     display: flex;
     flex-direction: row;
-    color: #fff;
+
     width: 100%;
     padding: 1rem;
 }
 
 .U-mainContain{
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -35,10 +41,13 @@
 
 .U-containe{
     width: 100%;
+    
 }
+
 
 .U-containImg{
     width: 100%;
+    border: 2px solid black;
 }
 
 

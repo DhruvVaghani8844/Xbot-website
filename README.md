@@ -1,10 +1,3 @@
-here is over githube profile link :- https://github.com/DhruvVaghani8844
-right now we are working on thr some special project call Xbot ..
-
-
-
-
-
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

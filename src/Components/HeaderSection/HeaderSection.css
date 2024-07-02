@@ -52,6 +52,31 @@
     font-weight: 400;
 }
 
+
+.site_header-mainNav a:not(.site-header_logoLink)::after{
+    content: " ";
+    bottom: -8px;
+    left: -4px;
+    right: -4px;
+    position: absolute;
+    border-top: 2px solid #fff;
+    transform: scaleX(0);
+    transform-origin: right center;
+    transition: transform .6s cubic-bezier(.19,1,.22,1);
+}
+
+.site_header-mainNav a:not(.site-header_logoLink):hover:after{
+    transition-duration: .4s;
+    transform: scaleX(1);
+    transform-origin: left center;
+}
+
+.site_header-mainNav a:not(.site-header_logoLink) {
+    display: block;
+    position: relative;
+    text-decoration: none;
+}
+
 .site-header_small {
     display: flex;
     line-height: 1;
