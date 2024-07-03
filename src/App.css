@@ -8,7 +8,13 @@
   margin-left: auto;
 }
 
+.font-mono {
+  font-family: FoundersGroteskMono, Monaco, monospace;
+}
 
+.font-grot{
+  font-family: FoundersGrotesk, Arial, sans;
+}
 
 
 a {

@@ -9,10 +9,10 @@ const FeaturesSection = () => {
   return (
     <div className="xbot-container">
       <div className="F-heading">
-        <h1>Features</h1>
+        <h1 className="font-mono">Features</h1>
       </div>
       <div className="F-heading-p">
-        <p>One Platform for All Your Favorite Features.</p>
+        <p className="font-grot">One Platform for All Your Favorite Features.</p>
       </div>
       <div className="F-container">
         <ul className="features-01__items">

@@ -8,10 +8,10 @@ const UserAcqSection = () => {
     <div className="userAcq-Section">
       <div className="xbot-container">
         <div className="U-heading">
-          <h1>Effortless User Acquisition</h1>
+          <h1 className="font-mono">Effortless User Acquisition</h1>
         </div>
         <div className="U-heading-p">
-          <p>Now simplified</p>
+          <p className="font-grot">Now simplified</p>
         </div>
 
         <div className="U-contain-box">

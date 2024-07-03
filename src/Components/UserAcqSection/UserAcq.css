@@ -1,5 +1,7 @@
 .userAcq-Section{
-    background-color: #ebebeb;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+
     color: black;
 }
 
@@ -9,7 +11,7 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    margin: 12rem 0 -1rem;
+    margin: 5rem 0 -1.5rem;
 
     letter-spacing: .01em;
     line-height: 1.3;
