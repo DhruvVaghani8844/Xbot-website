@@ -21,6 +21,15 @@
   color: rgb(131 126 126 / var(--tw-text-opacity));
 }
 
+.border-grey {
+  --tw-border-opacity: 1;
+  border-color: rgb(131 126 126 / var(--tw-border-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
 
 a {
   text-decoration: none;

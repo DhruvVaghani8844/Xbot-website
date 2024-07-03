@@ -44,6 +44,8 @@
     padding-right: 30px;
 }
 .feature__title {
+    display: flex;
+    align-items: center;
     margin-top: 0;
     margin-bottom: 15px;
 }

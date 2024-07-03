@@ -9,6 +9,7 @@ import {
   UserAcqSection,
   FeaturesSection,
   FooterSection,
+  AboutSection,
 } from "./Components/index.js";
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
       <HeroSection />
       <UserAcqSection />
       <FeaturesSection />
+      <AboutSection/>
       <FooterSection/>
     </div>
   );

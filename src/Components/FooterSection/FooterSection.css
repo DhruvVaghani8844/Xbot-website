@@ -1,0 +1,249 @@
+.f-section {
+    border: solid hsla(0, 0%, 100%, .4);
+    ;
+    border-width: 1px 0px 0px 0px;
+}
+
+.f-container {
+    display: block;
+    width: calc(94.44444vw - 17px * 0.94444);
+    margin: 0 auto;
+    width: calc(2 * (6.35532vw - 17px * 0.06355) + 1 * (1.65278vw - 17px * 0.01653));
+}
+
+.f-footer-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* right section */
+
+.f-right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 6.25rem;
+    padding-top: 3.75rem;
+
+}
+
+.f-right-dec {
+    display: flex;
+    flex-direction: column;
+    gap: calc(1.65278vw - 17px * 0.01653);
+}
+
+.f-right-term {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: max(9px, .625rem);
+    line-height: 2;
+    letter-spacing: .01em;
+}
+
+
+.f-right-nav-link {
+    font-size: max(11.2px, .875rem);
+    line-height: 1.3;
+    letter-spacing: .01em;
+}
+
+.f-right-logo-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.h-fit {
+    height: fit-content;
+}
+
+.w-140 {
+    width: 8.75rem;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.block {
+    display: block;
+}
+
+.w-fit {
+    width: fit-content;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.hidden ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.hidden ul a {
+    position: relative;
+    display: inline-flex;
+    z-index: 0;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+.w-24 {
+    width: 1.5rem;
+}
+
+.h-24 {
+    height: 1.5rem;
+}
+
+.f-right-link {
+    display: flex;
+   
+    flex-direction: column;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.f-nav-links {
+    position: relative;
+    display: inline-flex;
+    z-index: 0;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    font-size: max(11.2px,.875rem);
+    font-family: FoundersGrotesk, Arial, sans;
+    letter-spacing: .1em;
+}
+
+.button_underline::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: currentcolor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .6s cubic-bezier(.77, 0, .175, 1);
+    pointer-events: none;
+}
+
+.f-right-social-logo{
+    display:flex ;
+    gap: 1rem;
+}
+
+.f-nav-link-tag{
+    font-size: max(9px,.687rem);
+    line-height: 1.25 !important;
+        font-family: FoundersGroteskMono, Monaco, monospace;
+}
+
+.right-term-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.25rem;
+}
+
+
+/* left section */
+
+.f-left-section {
+    position: relative;
+    padding-bottom: 2.5rem;
+    padding-top: 3.75rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* responsiv */
+
+
+@media (min-width: 1024px) {
+    .f-container {
+        width: calc(12 * (6.35532vw - 17px * 0.06355) + 11 * (1.65278vw - 17px * 0.01653));
+
+    }
+
+    .f-footer-wrapper {
+        flex-direction: row;
+    }
+
+    /* right Section */
+    .f-right-section {
+        width: 50%;
+        padding-bottom: 2.5rem;
+        gap: 6rem;
+        border: solid;
+        border-width: 0px 1px 0px 0px;
+    }
+
+    .f-right-dec {
+        flex-direction: row;
+    }
+
+    .f-right-logo {
+        width: calc(2 * (6.35532vw - 17px * 0.06355) + 1 * (1.65278vw - 17px * 0.01653));
+
+    }
+
+    .f-right-nav-link {
+        padding-top: .9rem;
+        width: calc(2 * (6.35532vw - 17px * 0.06355) + 1 * (1.65278vw - 17px * 0.01653));
+    }
+
+    .f-right-social-link {
+        width: calc(2 * (6.35532vw - 17px * 0.06355) + 1 * (1.65278vw - 17px * 0.01653));
+        padding-top: .9rem;
+    }
+
+    .f-right-logo-container {
+        flex-direction: column;
+        gap: 6.25rem;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .f-right-link {
+        gap: 1.375rem;
+    }
+    .right-term-container{
+        gap: 2.25rem;
+    }
+
+
+    /* left section */
+    .f-left-section {
+        width: 50%;
+        padding-left: 3.75rem;
+     
+    }
+}
