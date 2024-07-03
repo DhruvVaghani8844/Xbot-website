@@ -78,3 +78,27 @@
 .content_box p:last-child {
     margin-bottom: 0;
 }
+
+
+
+
+/* responsiv */
+@media (max-width: 990px) {
+    .features-01__item {
+        width: 50%;
+    }
+
+    .feature__title_text{
+        font-size: 8.1px;
+    }
+}
+
+@media (max-width: 600px) {
+    .features-01__item {
+        width: 100%;
+        padding-right: 0;
+    }
+    .feature__title_text{
+        font-size: 12px;
+    }
+}
