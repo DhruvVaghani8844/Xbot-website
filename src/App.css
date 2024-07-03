@@ -16,6 +16,11 @@
   font-family: FoundersGrotesk, Arial, sans;
 }
 
+.text-grey {
+  --tw-text-opacity: 1;
+  color: rgb(131 126 126 / var(--tw-text-opacity));
+}
+
 
 a {
   text-decoration: none;
