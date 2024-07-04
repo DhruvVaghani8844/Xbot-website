@@ -85,6 +85,14 @@
 
 
 /* responsiv */
+@media (min-width: 1024px) {
+    .feature-section{
+        padding-bottom: 3.375rem;
+    }
+}
+
+
+
 @media (max-width: 990px) {
     .features-01__item {
         width: 50%;

@@ -6,9 +6,8 @@
 
 .f-container {
     display: block;
-    width: calc(94.44444vw - 17px * 0.94444);
     margin: 0 auto;
-    width: calc(2 * (6.35532vw - 17px * 0.06355) + 1 * (1.65278vw - 17px * 0.01653));
+    width: calc(2 * (45.23438vw - 17px * 0.45234) + 1 * (3.28125vw - 17px * 0.03281));
 }
 
 .f-footer-wrapper {
@@ -109,11 +108,11 @@
 
 .f-right-link {
     display: flex;
-   
+
     flex-direction: column;
 }
 
-ul{
+ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -128,12 +127,25 @@ ul{
     justify-content: center;
     outline: 2px solid transparent;
     outline-offset: 2px;
-    font-size: max(11.2px,.875rem);
+    font-size: max(11.2px, .875rem);
     font-family: FoundersGrotesk, Arial, sans;
     letter-spacing: .1em;
 }
 
-.button_underline::after {
+.f-nav-links:hover{
+    text-decoration: none;
+    color: #ffffffa8;
+    
+}
+
+.f-nav-links:hover::after {
+    transition-duration: .4s;
+    transform: scaleX(1);
+    transform-origin: left center;
+}
+
+
+.f-nav-links::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -143,22 +155,24 @@ ul{
     background: currentcolor;
     transform: scaleX(0);
     transform-origin: left;
-    transition: transform .6s cubic-bezier(.77, 0, .175, 1);
+    transition: transform .6s cubic-bezier(.77,0,.175,1);
     pointer-events: none;
 }
 
-.f-right-social-logo{
-    display:flex ;
+
+
+.f-right-social-logo {
+    display: flex;
     gap: 1rem;
 }
 
-.f-nav-link-tag{
-    font-size: max(9px,.687rem);
+.f-nav-link-tag {
+    font-size: max(9px, .625rem);
     line-height: 1.25 !important;
-        font-family: FoundersGroteskMono, Monaco, monospace;
+    font-family: FoundersGroteskMono, Monaco, monospace;
 }
 
-.right-term-container{
+.right-term-container {
     display: flex;
     flex-wrap: wrap;
     gap: 2.25rem;
@@ -169,16 +183,139 @@ ul{
 
 .f-left-section {
     position: relative;
-    padding-bottom: 2.5rem;
-    padding-top: 3.75rem;
+    padding-bottom: 5.5rem;
+    padding-top: 0.75rem;
+
+}
+
+
+
+.mb-15 {
+    margin-bottom: .9375rem;
+}
+
+.f-left-term {
+    margin-bottom: .5rem;
+    padding-top: 6.25rem;
+    font-size: max(9px, .625rem);
+    line-height: 2;
+    letter-spacing: .01em;
+}
+
+.f-left-decription {
+    margin-bottom: .3rem;
+    white-space: pre-wrap;
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: max(32px, 2.5rem);
+}
+
+.f-left-decription-p {
+    margin-top: 1.25rem;
+    font-family: "Space Grotesk", sans-serif;
+
+
+}
+
+.f-left-form-dec {
+    display: flex;
+    justify-content: space-between;
+    gap: .8rem;
+}
+
+.f-left-form-input {
+    position: relative;
+}
+
+.f-left-form-button {
+    position: relative;
+    display: inline-flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    z-index: 0;
+    height: 3rem;
+    border: 1px solid rgb(255 255 255 / 20%);
+    padding: .75rem 3.25rem .75rem 1.5rem;
+    border-radius: 5.6rem;
+    color: #fff;
+    width: fit-content;
+    font-family: FoundersGroteskMono, Monaco, monospace;
+    font-size: max(9.6px, .75rem);
+    line-height: 1.2;
+    letter-spacing: -.04em;
+    text-transform: uppercase;
+    background: transparent;
+}
+
+.f-left-form-input input {
+    background-color: transparent;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    font-size: max(9.6px, .75rem);
+    line-height: 1.2;
+    letter-spacing: -.04em;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-duration: .15s;
 }
 
 
 
 
 
+.f-left-term ul {
+    display: flex;
+    justify-content: space-between;
+}
 
 
+
+
+.centered-container {
+    position: absolute;
+    right: 22px;
+
+    display: inline-flex;
+    border-radius: 0.125rem;
+    border: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, .04);
+}
+
+.link {
+    color: #fff;
+    cursor: pointer;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.link--arrowed {
+    display: inline-block;
+    height: 2rem;
+    line-height: 2rem;
+}
+
+.link--arrowed .arrow-icon {
+    position: relative;
+    top: -1px;
+    transition: transform 0.3s ease;
+    vertical-align: middle;
+}
+
+.link--arrowed .arrow-icon--circle {
+    transition: stroke-dashoffset 0.3s ease;
+    stroke-dasharray: 95;
+    stroke-dashoffset: 95;
+}
+
+.f-left-form-button:hover .arrow-icon {
+    transform: translate3d(5px, 0, 0);
+}
+
+.f-left-form-button:hover .arrow-icon--circle {
+    stroke-dashoffset: 0;
+}
 
 
 
@@ -235,7 +372,8 @@ ul{
     .f-right-link {
         gap: 1.375rem;
     }
-    .right-term-container{
+
+    .right-term-container {
         gap: 2.25rem;
     }
 
@@ -244,6 +382,75 @@ ul{
     .f-left-section {
         width: 50%;
         padding-left: 3.75rem;
-     
+
+    }
+
+    .f-left-term {
+        display: none;
+    }
+
+    .f-left-decription {
+        line-height: .87;
+        letter-spacing: -.02em;
+        font-size: max(54.4px, 4.25rem);
+        width: calc(3 * (6.35532vw - 17px * 0.06355) + 2 * (1.65278vw - 17px * 0.01653));
+
+    }
+
+    .f-left-decription-p {
+        font-size: max(11.2px, .875rem);
+        line-height: 1.3;
+        letter-spacing: .01em;
+        width: calc(4 * (6.35532vw - 17px * 0.06355) + 3 * (1.65278vw - 17px * 0.01653));
+
+    }
+
+    .f-left-form-dec {
+        gap: 1.5rem;
+    }
+}
+
+
+
+@media (max-width: 1023px) {
+    .f-right-logo {
+        margin-bottom: 3.75rem;
+    }
+
+    .f-right-logo-container {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .f-right-link li {
+        margin-bottom: 1.375rem;
+        width: 5.625rem;
+    }
+
+    .f-right-social-link {
+        display: none;
+    }
+
+    .f-right-term {
+        display: none;
+    }
+
+    .f-left-section::before {
+        content: "";
+        --tw-bg-opacity: 1;
+        background-color: rgb(131 126 126 / var(--tw-bg-opacity));
+        width: 100%;
+        height: 1px;
+        display: block;
+        top: 0;
+        position: absolute;
+    }
+
+    .f-left-decription-p {
+        font-size: 10px;
+    }
+
+    .f-left-decription {
+        font-size: max(32px, 1.5rem);
     }
 }

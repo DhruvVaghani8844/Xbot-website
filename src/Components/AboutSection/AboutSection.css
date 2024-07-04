@@ -1,0 +1,39 @@
+.about-section{
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    color: black;
+}
+
+
+.about-heading{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: max(24px,1.875rem);
+    line-height: 1.23;
+    letter-spacing: -.04em;
+
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 1024px) {
+    .about-section {
+        padding-top: 2.375rem;
+        padding-bottom: 9.375rem;
+    }
+}
+
+
+
+@media (max-width: 640px) {
+    .about-section-img img {
+        width: 100%;
+    }
+}

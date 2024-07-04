@@ -1,6 +1,5 @@
-import React, { useEffect, useRef } from "react";
-import LocomotiveScroll from "locomotive-scroll";
-import "locomotive-scroll/src/locomotive-scroll.scss";
+import React from "react";
+
 import "./App.css";
 
 import {
@@ -13,24 +12,10 @@ import {
 } from "./Components/index.js";
 
 function App() {
-  const scrollRef = useRef(null);
-
-  useEffect(() => {
-    if (scrollRef.current) {
-      const scroll = new LocomotiveScroll({
-        el: scrollRef.current,
-        smooth: true,
-        lerp:0.1
-      });
-
-      return () => {
-        if (scroll) scroll.destroy();
-      };
-    }
-  }, []);
+  
 
   return (
-    <div className="App" ref={scrollRef}>
+    <div className="App" >
       <HeaderSection />
       <HeroSection />
       <UserAcqSection />
