@@ -1,7 +1,20 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import "./UserAcq.css";
 
-import { social_logo } from "../../assets/index.js";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+
+
+// import required modules
+import { Autoplay } from "swiper/modules";
+
+import {
+  social_logo1,
+  social_logo2,
+  social_logo3,
+} from "../../assets/index.js";
 
 const UserAcqSection = () => {
   return (
@@ -16,7 +29,7 @@ const UserAcqSection = () => {
 
         <div className="U-contain-box">
           <div className="U-mainContain">
-            <div className="U-containe">
+            <div className="U-container">
               <p>
                 Xbots is transforming the way businesses acquire new users by
                 connecting with customers where it matters most.
@@ -27,9 +40,22 @@ const UserAcqSection = () => {
                 traditional methods.
               </p>
             </div>
-            <div className="U-containImg">
-              <img src={social_logo} alt="" />
-            </div>
+
+            <Swiper
+              spaceBetween={30}
+              centeredSlides={true}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+             
+              modules={[Autoplay]}
+              className="mySwiper U-containImg"
+            >
+              <SwiperSlide><img src={social_logo1} alt="" /></SwiperSlide>
+              <SwiperSlide><img src={social_logo2} alt="" /></SwiperSlide>
+              <SwiperSlide><img src={social_logo3} alt="" /></SwiperSlide>
+            </Swiper>
           </div>
         </div>
       </div>

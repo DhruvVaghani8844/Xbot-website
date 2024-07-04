@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 import cursor_mark from "../../assets/logo/cursor_mask.webp";
 
 const HeroSVG = () => (
-    <div className="hero_outline_ani">
+  <div className="hero_outline_ani">
     <div className="hero_outline-logo">
       <svg
         className="xbot-outline_outline__pwT8v"
@@ -10,13 +10,7 @@ const HeroSVG = () => (
         viewBox="0 0 1050 325.07"
       >
         <mask id="stroke">
-          <rect
-            x="0"
-            y="0"
-            width="1050"
-            height="325.07"
-            fill="#fff"
-          ></rect>
+          <rect x="0" y="0" width="1050" height="325.07" fill="#fff"></rect>
           <path
             className="xbot-outline_dash__8_zAL"
             fill="#fff"
@@ -67,25 +61,25 @@ const HeroSVG = () => (
             stroke="#000"
           ></rect>
           <path
-              fill="#fff"
+            fill="#fff"
             stroke="#000"
             class="xbot-outline_dash__8_zAL"
             d="m27.03,181.69c0-34.46,5.95-65,17.86-91.64,11.9-26.62,29.29-47.46,52.16-62.5,22.87-15.04,50.59-22.56,83.18-22.56,38.53,0,68.21,8.93,89.05,26.79,20.83,17.86,34.54,41.67,41.12,71.43l-51.22,7.52c-4.7-18.48-12.77-33.36-24.2-44.64-11.44-11.28-29.69-16.92-54.75-16.92-22.87,0-41.59,5.72-56.16,17.15-14.57,11.44-25.38,27.1-32.43,46.99-7.05,19.9-10.57,42.53-10.57,67.9,0,40.11,8.46,72.06,25.38,95.87,16.92,23.81,43.39,35.71,79.42,35.71,15.66,0,30.46-1.88,44.41-5.64,13.94-3.76,26.39-9.55,37.36-17.39v-72.84h-79.42v-43.7h127.82v137.69c-16.92,15.35-37.2,26.95-60.86,34.77-23.66,7.83-47.07,11.75-70.25,11.75-50.13,0-88.98-15.51-116.54-46.52-27.57-31.02-41.35-74.09-41.35-129.23Z"
           ></path>
           <path
-              fill="#fff"
+            fill="#fff"
             stroke="#000"
             class="xbot-outline_dash__8_zAL"
             d="m378.06,13.46h114.66c24.74,0,45.19,2.67,61.33,7.99,16.13,5.33,28.9,12.61,38.3,21.85,9.4,9.24,16.05,19.66,19.97,31.25,3.91,11.59,5.87,23.5,5.87,35.71,0,21.31-4.46,39.64-13.39,54.98-8.93,15.35-23.11,27.42-42.53,36.18l70.02,147.56h-56.86l-62.03-135.81c-3.76.32-7.6.55-11.51.71-3.92.16-7.6.23-11.04.23h-62.03v134.87h-50.75V13.46Zm188.44,98.68c0-11.9-2.19-22.09-6.58-30.54-4.39-8.46-12.15-14.88-23.26-19.27-11.12-4.38-26.55-6.58-46.29-6.58h-61.56v115.6h66.73c18.48,0,32.9-2.42,43.23-7.28,10.34-4.85,17.54-11.67,21.62-20.44,4.07-8.77,6.11-19.27,6.11-31.49Z"
           ></path>
           <path
-              fill="#fff"
+            fill="#fff"
             stroke="#000"
             class="xbot-outline_dash__8_zAL"
             d="m5,579.25c0-37.59,6.65-69.55,19.97-95.87,13.31-26.32,31.72-46.36,55.22-60.15,23.5-13.78,50.75-20.68,81.77-20.68s58.66,6.81,82,20.44c23.33,13.63,41.51,33.44,54.51,59.44,13,26.01,19.5,57.8,19.5,95.4s-6.43,69.63-19.27,96.1c-12.85,26.48-31.02,46.6-54.51,60.38-23.5,13.78-51.07,20.68-82.71,20.68s-58.27-6.82-81.77-20.44c-23.5-13.63-41.82-33.52-54.98-59.68-13.16-26.15-19.74-58.04-19.74-95.63Zm54.04-.47c0,40.1,8.53,71.98,25.61,95.63,17.07,23.66,42.68,35.48,76.83,35.48s58.98-11.82,76.36-35.48c17.39-23.65,26.08-55.52,26.08-95.63s-8.69-71.58-26.08-95.4c-17.39-23.8-42.84-35.71-76.36-35.71s-59.76,11.91-76.83,35.71c-17.08,23.81-25.61,55.61-25.61,95.4Z"
           ></path>
           <path
-              fill="#fff"
+            fill="#fff"
             stroke="#000"
             class="xbot-outline_dash__8_zAL"
             d="m378.12,411.01h52.63v155.08l148.03-155.08h57.8l-117.48,125.47,129.7,210.06h-59.21l-107.61-174.81-51.22,53.1v121.71h-52.63v-335.53Z"
@@ -105,8 +99,7 @@ const HeroSVG = () => (
         className="xbot-outline_mouseMask__7FiGB"
         style={{
           transform: "translate(0px, 0px)",
-          transition:
-            "transform 350ms ease-out, background-color 0s linear",
+          transition: "transform 350ms ease-out, background-color 0s linear",
         }}
       >
         <img
@@ -121,16 +114,14 @@ const HeroSVG = () => (
         className="xbot-outline_mouseMask_7FiGB xbot-outline_second_bX4_B"
         style={{
           transform: "translate(0px, 0px)",
-          transition:
-            "transform 437.5ms ease-out, background-color 0s linear",
+          transition: "transform 437.5ms ease-out, background-color 0s linear",
         }}
       ></div>
       <div
         className="xbot-outline_mouseMask_7FiGB xbot-outline_third_zcD0B"
         style={{
           transform: "translate(0px, 0px)",
-          transition:
-            "transform 525ms ease-out, background-color 0s linear",
+          transition: "transform 525ms ease-out, background-color 0s linear",
         }}
       ></div>
     </div>

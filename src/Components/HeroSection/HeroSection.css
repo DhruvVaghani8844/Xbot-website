@@ -134,19 +134,10 @@
     opacity: 0;
     mix-blend-mode: lighten;
     transform: translate(43%, 32%);
-    -webkit-user-select: none;
-    -moz-user-select: none;
+ 
     user-select: none;
 }
 
-.xbot-outline_mouseMask__7FiGB.xbot-outline_second__bX4_B {
-    transition: transform 1.65s ease, background-color 1.65s linear;
-}
-
-
-.xbot-outline_mouseMask__7FiGB.xbot-outline_third__zcD0B {
-    transition: transform 1.8s ease, background-color 1.8s linear;
-}
 
 .hero_outline-logo:after {
     content: " ";
@@ -225,6 +216,7 @@
 
     .xbot-outline_outline__pwT8v.xbot-outline_xs__3_aKz {
         display: block;
+        
     }
 
     .xbot-outline_outline__pwT8v {

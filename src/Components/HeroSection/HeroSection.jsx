@@ -24,14 +24,14 @@ const HeroSection = () => {
         const maskRect = mask.getBoundingClientRect();
         const maskOffsetX = offsetX - maskRect.width / 5;
         const maskOffsetY = offsetY - maskRect.height / 5;
+        const hue = (offsetX / boundingRect.width) * 360;
+        const saturation = (offsetY / boundingRect.height) * 100;
+        const backgroundColor = `hsl(${hue}, ${saturation}%, 50%)`;
 
         mask.style.transition =
           "transform 0.2s ease-out, background-color 0s linear";
         mask.style.transform = `translate(${maskOffsetX}px, ${maskOffsetY}px)`;
 
-        const hue = (offsetX / boundingRect.width) * 360;
-        const saturation = (offsetY / boundingRect.height) * 100;
-        const backgroundColor = `hsl(${hue}, ${saturation}%, 50%)`;
         mask.style.backgroundColor = backgroundColor;
       }
     });
@@ -87,8 +87,8 @@ const HeroSection = () => {
           {/* <h1>Connect - Engage - Convert</h1> */}
           <a className="hero-details-button">
             <img src={whatsapp} alt="" />
-          
-            <span>Official Whatsapp Business API</span>
+
+            <span className="text-grey">Official Whatsapp Business API</span>
           </a>
         </section>
       </section>
