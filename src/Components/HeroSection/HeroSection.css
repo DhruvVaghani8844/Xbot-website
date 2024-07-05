@@ -227,9 +227,13 @@
         justify-content: center;
         margin-left: auto;
         margin-right: auto;
+        width: 70%;
     }
     .xbot-outline_gradient{
         background: linear-gradient(180deg, #ffffff, #0f1518) 0 0;
+    }
+    .hero_outline_ani{
+        padding-left: 1rem;
     }
 }
 
