@@ -136,6 +136,14 @@ const UserAcqSection = () => {
           </div>
         </div>
       </div>
+      <div className="user-backdrop-section">
+        <ul className="user-backdrop">
+          <li className="user-backdrop-dec">Array is 1/5th the thickness of a human hair.</li>
+          <li className="user-backdrop-dec">The slit for insertion is less than 1mm thickness.</li>
+          <li className="user-backdrop-dec">Array has 600x greater electrode density than standard cortical arrays.</li>
+          <li className="user-backdrop-dec">Slit insertion method  will deliver more than 50 electrodes per second.</li>
+        </ul>
+      </div>
     </div>
   );
 };

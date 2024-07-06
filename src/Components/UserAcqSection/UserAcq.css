@@ -102,14 +102,94 @@
     line-height: 140%;
 }
 
+
+
+
+
+
+.user-backdrop-section {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    flex-direction: column;
+    z-index: 0;
+    height: 70vh;
+}
+
+
+.user-backdrop {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: .5rem;
+    background-color: hsla(0, 0%, 46%, .24);
+    padding: 2.25rem;
+    backdrop-filter: blur(16px);
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 3;
+}
+
+.user-backdrop-dec {
+    font-size: max(14.4px, 1.125rem);
+    line-height: 1.2;
+    letter-spacing: .01em;
+    text-align: center;
+    border-style: solid;
+    font-family: 'Space Grotesk';
+    border: solid;
+    border-width: 0px 0px 1px 0px;
+    padding-bottom: 1rem;
+
+}
+
+.user-backdrop-dec:last-child {
+    padding: 0;
+    border-width: 0;
+}
+
+
 /* media */
 
 @media (min-width:1024px) {
     .U-container p {
         width: 80%;
     }
+
+    .user-backdrop {
+        flex-direction: row;
+        gap: 1.87rem;
+        padding: 1.87rem;
+        max-width: calc(9* (6.35532vw - 16px * 0.06355) + 8* (1.65278vw - 16px * 0.01653));
+    }
+
+    .user-backdrop-section {
+        padding-top: 8.5rem;
+        /* padding-bottom: 7.5rem; */
+        height: 50vh;
+    }
+
+    .user-backdrop-dec {
+        padding-right: 1.875rem;
+        border: solid;
+        border-width: 0px 1px 0px 0px;
+        line-height: 1.2;
+        padding-bottom: 0rem;
+    }
+
 }
 
+
+@media (max-width:1024px) {
+    .user-backdrop {
+
+        transform: translate(50%, 50%) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
+        right: 50%;
+        width: 15.625rem;
+        bottom: 0;
+        position: absolute;
+    }
+}
 
 @media (max-width:924px) {
     .U-mainContain {
