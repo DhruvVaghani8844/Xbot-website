@@ -25,7 +25,7 @@
 .F-container{
     margin-right: auto;
     margin-left: auto;
-    padding: 0 0 15px 35px;
+    padding: 0rem;
     max-width: 1080px;
     color: white;
 }
@@ -40,6 +40,7 @@
     flex-wrap: wrap;
     margin-bottom: -60px;
     margin-top: 3rem;
+    gap: 1rem;
 }
 
 .features-01__item {
@@ -47,12 +48,19 @@
     max-width: 350px;
     margin-bottom: 60px;
     padding-right: 30px;
+    border: 1px solid #ffffff30;
+    border-radius: 10px;
+    padding: 1rem;
+    height: 165px;
 }
 .feature__title {
     display: flex;
     align-items: center;
     margin-top: 0;
     margin-bottom: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
 }
 .feature__icon {
     position: relative;
@@ -99,6 +107,10 @@
     .F-heading{
         margin: 5rem 0 -1rem;
     }
+    .F-container{
+        padding: 0 0 15px 35px;
+    }
+  
  
 }
 

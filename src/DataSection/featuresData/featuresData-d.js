@@ -67,7 +67,7 @@ export const featuresData = [
     },
     {
       title: "ECOMM+",
-      description: "Easily integrate your Shopify and WooCommerce stores and automate notifications for order deliveries, abandoned carts, and more.",
+      description: "Easily integrate your Shopify and WooCommerce stores and automate notifications for order.",
     },
     {
       title: "ADDITIONAL FEATURES",

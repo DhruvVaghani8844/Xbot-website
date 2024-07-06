@@ -23,9 +23,15 @@
 
 
 .about-container p{
-    line-height: 1.35rem;
+    line-height: 1.65rem;
     letter-spacing: 0.01em;
 }
+
+
+.about-section-img>img {
+    width: 100%;
+}
+
 
 
 
@@ -33,6 +39,9 @@
     .about-section {
         padding-top: 2.375rem;
         padding-bottom: 9.375rem;
+    }
+    .about-mainContainer{
+        gap: 6rem;
     }
     .about-container p{
         width: 68%;
@@ -44,8 +53,3 @@
 
 
 
-@media (max-width: 640px) {
-    .about-section-img img {
-        width: 100%;
-    }
-}
