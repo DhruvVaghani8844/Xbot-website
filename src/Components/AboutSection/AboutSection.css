@@ -16,7 +16,10 @@
 }
 
 
-
+.xbot-container .U-heading{
+    margin: 0;
+    padding-top: 0rem;
+}
 
 
 
@@ -27,6 +30,12 @@
     .about-section {
         padding-top: 2.375rem;
         padding-bottom: 9.375rem;
+    }
+    .about-container p{
+        width: 68%;
+    }
+    .about-section>div{
+        padding-bottom: 0rem;
     }
 }
 

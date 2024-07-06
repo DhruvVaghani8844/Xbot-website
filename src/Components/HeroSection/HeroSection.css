@@ -66,6 +66,7 @@
 }
 
 .hero-details-button {
+    cursor: pointer;
     border-radius: 2px;
     background: transparent;
     color: white;

@@ -13,6 +13,7 @@ import {
   social_logo1,
   social_logo2,
   social_logo3,
+  single_img
 } from "../../assets/index.js";
 
 const UserAcqSection = () => {
@@ -29,6 +30,19 @@ const UserAcqSection = () => {
         <div className="U-contain-box">
           <div className="U-mainContain">
             <div className="U-wrapper">
+             
+              <div className="U-container">
+                <h1>The benefits are endless</h1>
+                <p>
+                  Xbots is transforming the way businesses acquire new users by
+                  connecting with customers where it matters most.
+                </p>
+                <p>
+                  Leverage WhatsApp marketing with Xbots to potentially cut
+                  Customer Acquisition Costs (CAC) by 50-75% compared to
+                  traditional methods.
+                </p>
+              </div>
               <div className="U-wrapper-dec">
                 <div className="U-wrapper-dec-svg">
                   <svg
@@ -97,18 +111,6 @@ const UserAcqSection = () => {
                   <div className="U-wrapper-dec-title">No hidden fees</div>
                 </div>
               </div>
-              <div className="U-container">
-                <h1>The benefits are endless</h1>
-                <p>
-                  Xbots is transforming the way businesses acquire new users by
-                  connecting with customers where it matters most.
-                </p>
-                <p>
-                  Leverage WhatsApp marketing with Xbots to potentially cut
-                  Customer Acquisition Costs (CAC) by 50-75% compared to
-                  traditional methods.
-                </p>
-              </div>
             </div>
 
             <Swiper
@@ -122,14 +124,14 @@ const UserAcqSection = () => {
               className="mySwiper U-containImg"
             >
               <SwiperSlide>
-                <img src={social_logo1} alt="" />
+                <img src={single_img} alt="" />
               </SwiperSlide>
-              <SwiperSlide>
+              {/* <SwiperSlide>
                 <img src={social_logo2} alt="" />
               </SwiperSlide>
               <SwiperSlide>
                 <img src={social_logo3} alt="" />
-              </SwiperSlide>
+              </SwiperSlide> */}
             </Swiper>
           </div>
         </div>

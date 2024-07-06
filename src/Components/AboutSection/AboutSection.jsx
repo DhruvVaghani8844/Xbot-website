@@ -18,7 +18,7 @@ const AboutSection = () => {
               <div className="U-containImg about-section-img">
                 <img src={About_logo} alt="" />
               </div>
-              <div className="U-containe">
+              <div className="U-containe about-container">
                 <p>
                   When the brain processes information or initiates an action,
                   it generates electrical signals. Our thin film technology can
