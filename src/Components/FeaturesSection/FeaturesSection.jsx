@@ -24,6 +24,7 @@ const FeaturesSection = () => {
                 key={index}
                 title={feature.title}
                 description={feature.description}
+                imgs={feature.imgs}
               />
             ))}
           </ul>
