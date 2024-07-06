@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useCallback } from "react";
+import React, { useRef, useEffect, useCallback, useState } from "react";
 import "./HeroSection.css";
 
 // Componets
@@ -7,35 +7,57 @@ import whatsapp from "../../assets/social_logos/whatsapp (1).svg";
 
 const HeroSection = () => {
   const requestRef = useRef(null);
+  const [isMobile, setIsMobile] = useState(false);
 
-  const handleMouseMove = useCallback((event) => {
-    const { clientX, clientY } = event;
-    const svgElement = document.querySelector(".xbot-outline_outline__pwT8v");
-    const boundingRect = svgElement.getBoundingClientRect();
-    const offsetX = clientX - boundingRect.left;
-    const offsetY = clientY - boundingRect.top;
-
-    const masks = document.querySelectorAll(
-      ".xbot-outline_mouseMask__7FiGB, .xbot-outline_mouseMask_7FiGB"
-    );
-
-    masks.forEach((mask) => {
-      if (mask) {
-        const maskRect = mask.getBoundingClientRect();
-        const maskOffsetX = offsetX - maskRect.width / 5;
-        const maskOffsetY = offsetY - maskRect.height / 5;
-        const hue = (offsetX / boundingRect.width) * 360;
-        const saturation = (offsetY / boundingRect.height) * 100;
-        const backgroundColor = `hsl(${hue}, ${saturation}%, 50%)`;
-
-        mask.style.transition =
-          "transform 0.2s ease-out, background-color 0s linear";
-        mask.style.transform = `translate(${maskOffsetX}px, ${maskOffsetY}px)`;
-
-        mask.style.backgroundColor = backgroundColor;
-      }
-    });
+  const handleResize = useCallback(() => {
+    setIsMobile(window.innerWidth < 768);
   }, []);
+
+  useEffect(() => {
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [handleResize]);
+
+  const handleMouseMove = useCallback(
+    (event) => {
+      const { clientX, clientY } = event;
+      const svgElement = document.querySelector(".xbot-outline_outline__pwT8v");
+      if (!svgElement) return;
+
+      const boundingRect = svgElement.getBoundingClientRect();
+      const offsetX = clientX - boundingRect.left;
+      const offsetY = clientY - boundingRect.top;
+
+      const masks = document.querySelectorAll(
+        ".xbot-outline_mouseMask__7FiGB, .xbot-outline_mouseMask_7FiGB"
+      );
+
+      masks.forEach((mask) => {
+        if (mask) {
+          const maskRect = mask.getBoundingClientRect();
+          const maskOffsetX = isMobile
+            ? offsetX - maskRect.width / 2.5
+            
+            : offsetX - maskRect.width / 5;
+          const maskOffsetY = isMobile
+            ? offsetY - maskRect.height / 2.5
+            : offsetY - maskRect.height / 5;
+          const hue = (offsetX / boundingRect.width) * 360;
+          const saturation = (offsetY / boundingRect.height) * 100;
+          const backgroundColor = `hsl(${hue}, ${saturation}%, 50%)`;
+
+          mask.style.transition =
+            "transform 0.2s ease-out, background-color 0s linear";
+          mask.style.transform = `translate(${maskOffsetX}px, ${maskOffsetY}px)`;
+          mask.style.backgroundColor = backgroundColor;
+        }
+      });
+    },
+    [isMobile]
+  );
 
   const handleMouseLeave = useCallback(() => {
     const masks = document.querySelectorAll(
