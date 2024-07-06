@@ -8,7 +8,7 @@ const AboutSection = () => {
     <div className="about-section">
       <div className="userAcq-Section">
         <div className="xbot-container">
-          <div className="U-heading">
+          <div className="U-heading about-headings">
             <h1 className="font-mono">About Us</h1>
           </div>
           <br />
