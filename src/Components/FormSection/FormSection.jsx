@@ -13,66 +13,60 @@ const FormSection = () => {
                 id="name"
                 className="input-text js-input"
                 type="text"
+                placeholder="Name"
                 required
               />
-              <label className="label" htmlFor="name">
-                Name
-              </label>
+            
             </div>
             <div className="form-field col x-50">
               <input
                 id="email"
                 className="input-text js-input"
                 type="email"
+                placeholder="E-mail"
                 required
               />
-              <label className="label" htmlFor="email">
-                E-mail
-              </label>
+             
             </div>
             <div className="form-field col x-50">
               <input
                 id="message"
                 className="input-text js-input"
                 type="text"
+                placeholder="Contact No."
                 required
               />
-              <label className="label" htmlFor="message">
-                Contact No.
-              </label>
+             
             </div>
             <div className="form-field col x-50">
               <input
                 id="message"
                 className="input-text js-input"
                 type="text"
+                placeholder="City"
                 required
               />
-              <label className="label" htmlFor="message">
-                City
-              </label>
+             
             </div>
             <div className="form-field col x-50">
               <input
                 id="message"
                 className="input-text js-input"
                 type="text"
+                placeholder="Bussiness"
                 required
               />
-              <label className="label" htmlFor="message">
-                Bussiness
-              </label>
+             
             </div>
             <div className="form-field col x-50">
               <input
                 id="message"
                 className="input-text js-input"
                 type="text"
+                placeholder="Website"
                 required
               />
-              <label className="label" htmlFor="message">
-                Website
-              </label>
+            
             </div>
             <button className="form-button site-button d-sm-flex">
               Join Now

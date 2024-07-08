@@ -20,19 +20,19 @@ const AboutSection = () => {
               </div>
               <div className="U-containe about-container">
                 <p>
-                  When the brain processes information or initiates an action,
-                  it generates electrical signals. Our thin film technology can
-                  capture these signals at micron scale, providing an
-                  unprecedented view into the brain’s activity. Think of the
-                  leap from standard television feeds to high-definition.
+                  Xbots, your ultimate WhatsApp marketing platform designed to
+                  generate more leads, reach your customers faster, and drive
+                  tremendous growth for your business.
                 </p>
                 <p>
-                  When the brain processes information or initiates an action,
-                  it generates electrical signals. Our thin film technology can
-                  capture these signals at micron scale, providing an
-                  unprecedented view into the brain’s activity. Think of the
-                  leap from standard television feeds to high-definition.
+                  At Xbots, we're not just limited to providing marketing
+                  services. Our platform empowers your business to run
+                  autonomously, leveraging advanced artificial intelligence to
+                  simplify operations and reduce human effort. We are dedicated
+                  to delivering the benefits of automation and AI in the
+                  simplest, most effective way possible.
                 </p>
+                <p>We are here to simplify your business and your life.</p>
               </div>
             </div>
           </div>
