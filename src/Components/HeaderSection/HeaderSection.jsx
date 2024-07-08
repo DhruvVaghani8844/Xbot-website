@@ -2,7 +2,7 @@ import React from "react";
 import "./HeaderSection.css";
 import { xbot_logo } from "../../assets/index.js";
 
-const HeaderSection = () => {
+const HeaderSection = ({scrollToSection, refs }) => {
   return (
     <div className="xbot-container">
       <div className="site-header_placeholder"></div>
@@ -15,8 +15,8 @@ const HeaderSection = () => {
               </a>
             </div>
             <nav className="site_header-mainNav d-none d-sm-flex">
-              <a href="">Features</a>
-              <a href="">About</a>
+              <a  onClick={() => scrollToSection(refs.featuresRef)}>Features</a>
+              <a  onClick={() => scrollToSection(refs.aboutRef)}>About</a>
               <a href="">Blog</a>
             </nav>
             {/* <button className="site-button d-none d-sm-flex">

@@ -14,8 +14,8 @@ const AboutSection = () => {
           <br />
 
           <div className="U-contain-box">
-            <div className="U-mainContain about-mainContainer">
-              <div className="U-containImg about-section-img">
+            <div className="about-mainContainer">
+              <div className="about-section-img">
                 <img src={About_logo} alt="" />
               </div>
               <div className="U-containe about-container">
