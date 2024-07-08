@@ -33,6 +33,7 @@
 .U-container h1 {
     padding-bottom: 1rem;
     font-size: 35px;
+    line-height: 3.3rem;
 }
 
 .U-heading-p {
@@ -146,9 +147,14 @@
     z-index: 3;
 }
 
+.user-backdrop-dec:nth-child(1){
+    display: flex;
+    align-items: center;
+}
+
 .user-backdrop-dec {
     font-size: max(14.4px, 1.125rem);
-    line-height: 1.2;
+    line-height: 1.7;
     letter-spacing: .01em;
     text-align: center;
     border-style: solid;
@@ -188,7 +194,7 @@
         padding-right: 1.875rem;
         border: solid;
         border-width: 0px 1px 0px 0px;
-        line-height: 1.2;
+        
         padding-bottom: 0rem;
     }
   
@@ -229,7 +235,8 @@
 @media (max-width: 390px) {
 
     .U-container h1 {
-        font-size: 20px;
+        font-size: 17px;
+        line-height: 2.3rem;
     }
 
     .U-heading h1 {

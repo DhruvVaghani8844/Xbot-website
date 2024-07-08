@@ -61,15 +61,18 @@
     font-size: 16px;
 }
 
-.hero-details-button span:hover {
-    color: white;
+
+
+.hero-details-button:hover .hero-detail-img,.hero-details-button:hover span {
     transition: all 0.3s ;
+    color: white;
+    opacity: 1;
 }
 
-.hero-details-button img:hover{
+/* .hero-details-button img:hover{
     opacity: 1;
     transition: all 0.3s ;
-}
+} */
 
 .md-canva-text {
     display: none;

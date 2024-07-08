@@ -20,7 +20,9 @@ const UserAcqSection = () => {
           <div className="U-mainContain">
             <div className="U-wrapper">
               <div className="U-container">
-                <h1>Effortless User Acquisition. <br /> Now simplified</h1>
+                <h1>
+                  Effortless User Acquisition. <br /> Now simplified
+                </h1>
                 <p>
                   Xbots is transforming the way businesses acquire new users by
                   connecting with customers where it matters most.
@@ -32,7 +34,6 @@ const UserAcqSection = () => {
                 </p> */}
               </div>
               <div className="U-wrapper-items">
-               
                 {/* <div className="U-wrapper-dec">
                   <div className="U-wrapper-dec-svg">
                     <svg
@@ -248,20 +249,10 @@ const UserAcqSection = () => {
       </div>
       <div className="user-backdrop-section">
         <ul className="user-backdrop">
-          <li className="user-backdrop-dec">
-            Array is 1/5th the thickness of a human hair.
-          </li>
-          <li className="user-backdrop-dec">
-            The slit for insertion is less than 1mm thickness.
-          </li>
-          <li className="user-backdrop-dec">
-            Array has 600x greater electrode density than standard cortical
-            arrays.
-          </li>
-          <li className="user-backdrop-dec">
-            Slit insertion method will deliver more than 50 electrodes per
-            second.
-          </li>
+          <li className="user-backdrop-dec">Why Choose WhatsApp?</li>
+          <li className="user-backdrop-dec">🚀 95% <br /> Open rates</li>
+          <li className="user-backdrop-dec">⚡ 45-60% <br /> Click Rates</li>
+          <li className="user-backdrop-dec">😲 78% <br /> Response Rates</li>
         </ul>
       </div>
     </div>

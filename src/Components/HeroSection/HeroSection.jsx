@@ -108,7 +108,7 @@ const HeroSection = () => {
         <section className="hero-details">
           {/* <h1>Connect - Engage - Convert</h1> */}
           <a className="hero-details-button">
-            <img src={whatsapp} alt="" />
+            <img src={whatsapp} alt="" className="hero-detail-img" />
 
             <span className="text-grey">Official Whatsapp Business API</span>
           </a>
