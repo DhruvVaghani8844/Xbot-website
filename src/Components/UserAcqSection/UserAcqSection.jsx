@@ -10,17 +10,17 @@ const UserAcqSection = () => {
     <div className="userAcq-Section">
       <div className="xbot-container">
         <div className="U-heading">
-          <h1 className="">Effortless User Acquisition</h1>
+          {/* <h1 className="">Effortless User Acquisition</h1> */}
         </div>
         <div className="U-heading-p">
-          <p className="font-grot">Now simplified</p>
+          {/* <p className="font-grot">Now simplified</p> */}
         </div>
 
         <div className="U-contain-box">
           <div className="U-mainContain">
             <div className="U-wrapper">
               <div className="U-container">
-                <h1>All of your liveops. <br /> in one place.</h1>
+                <h1>Effortless User Acquisition. <br /> Now simplified</h1>
                 <p>
                   Xbots is transforming the way businesses acquire new users by
                   connecting with customers where it matters most.
@@ -32,7 +32,7 @@ const UserAcqSection = () => {
                 </p> */}
               </div>
               <div className="U-wrapper-items">
-                <span>userwise can help with:</span>
+               
                 {/* <div className="U-wrapper-dec">
                   <div className="U-wrapper-dec-svg">
                     <svg

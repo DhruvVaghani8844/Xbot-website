@@ -32,7 +32,7 @@
 
 .U-container h1 {
     padding-bottom: 1rem;
-    font-size: 50px;
+    font-size: 35px;
 }
 
 .U-heading-p {
@@ -83,11 +83,7 @@
     align-items: flex-start;
 }
 
-.U-wrapper-items span{
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 600;
-}
+
 
 .U-wrapper-dec {
     padding-top: 1.5rem;
@@ -195,6 +191,7 @@
         line-height: 1.2;
         padding-bottom: 0rem;
     }
+  
 
 }
 
@@ -221,6 +218,10 @@
     .U-wrapper-dec {
         align-items: flex-start;
         padding-bottom: 1rem;
+
+    }
+    .U-containImg{
+        width: 118%;
 
     }
 }

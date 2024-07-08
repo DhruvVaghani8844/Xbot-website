@@ -17,9 +17,6 @@
 .f-row {
     max-width: 730px;
     margin: 0 auto;
-    height: 55vh;
-    border: 1px solid black;
-    border-radius: 23px;
 }
 
 .f-row:after {

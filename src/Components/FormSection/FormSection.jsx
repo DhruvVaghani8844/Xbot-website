@@ -28,27 +28,7 @@ const FormSection = () => {
               />
              
             </div>
-            <div className="form-field col x-50">
-              <input
-                id="message"
-                className="input-text js-input"
-                type="text"
-                placeholder="Contact No."
-                required
-              />
-             
-            </div>
-            <div className="form-field col x-50">
-              <input
-                id="message"
-                className="input-text js-input"
-                type="text"
-                placeholder="City"
-                required
-              />
-             
-            </div>
-            <div className="form-field col x-50">
+            <div className="form-field col x-100">
               <input
                 id="message"
                 className="input-text js-input"
@@ -58,16 +38,10 @@ const FormSection = () => {
               />
              
             </div>
-            <div className="form-field col x-50">
-              <input
-                id="message"
-                className="input-text js-input"
-                type="text"
-                placeholder="Website"
-                required
-              />
             
-            </div>
+          
+           
+           
             <button className="form-button site-button d-sm-flex">
               Join Now
             </button>

@@ -52,13 +52,23 @@
     color: white;
 }
 
-.hero-details-button img{
+.hero-details-button img {
     width: 6.5%;
     opacity: .5;
 }
 
-.hero-details-button span{
+.hero-details-button span {
     font-size: 16px;
+}
+
+.hero-details-button span:hover {
+    color: white;
+    transition: all 0.3s ;
+}
+
+.hero-details-button img:hover{
+    opacity: 1;
+    transition: all 0.3s ;
 }
 
 .md-canva-text {
@@ -136,7 +146,7 @@
     opacity: 0;
     mix-blend-mode: lighten;
     transform: translate(43%, 32%);
- 
+
     user-select: none;
 }
 
@@ -218,26 +228,30 @@
 
     .xbot-outline_outline__pwT8v.xbot-outline_xs__3_aKz {
         display: block;
-        
+
     }
 
     .xbot-outline_outline__pwT8v {
         display: none;
     }
-    .hero_outline-logo{
+
+    .hero_outline-logo {
         align-items: center;
         justify-content: center;
         margin-left: auto;
         margin-right: auto;
         width: 70%;
     }
-    .xbot-outline_gradient{
+
+    .xbot-outline_gradient {
         background: linear-gradient(180deg, #ffffff, #0f1518) 0 0;
     }
-    .hero_outline_ani{
+
+    .hero_outline_ani {
         padding-left: 1.75rem;
     }
-    .hero-details{
+
+    .hero-details {
         position: relative;
         top: 5rem;
     }
@@ -257,7 +271,7 @@
 
 
 @media (max-width:445px) {
-    .hero_outline-logo{
+    .hero_outline-logo {
         width: auto;
     }
 }
