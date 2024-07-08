@@ -75,6 +75,7 @@
     display: block;
     position: relative;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .site-header_small {
