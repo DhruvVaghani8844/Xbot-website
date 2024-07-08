@@ -131,6 +131,27 @@
     border: 1px solid rgba(0, 0, 0, 0.2);
     color: #000000;
     padding: 0.75rem 2.25rem 0.75rem 2.5rem;
-    left: 40.5%;
+    margin-left: auto;
+    margin-right: auto;
     top: 0.5rem;
+}
+
+
+
+@media (max-width:1066px) {
+    .f-row{
+        height: 63vh;
+
+    }
+    .get-in-touch .title{
+        font-size: 24px;
+    }
+   
+}
+
+@media (max-width:766px) {
+    .form-button{
+        left: 5%;
+
+    }
 }
