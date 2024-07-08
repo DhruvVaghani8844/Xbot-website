@@ -36,8 +36,8 @@ export const logoSvg = `
 `;
 
 export const navLinks = [
-  { label: "Features", href: "#" },
-  { label: "About", href: "#" },
+  { label: "Features", ref: "featuresRef" },
+  { label: "About", ref: "aboutRef"  },
   { label: "Blog", href: "#" },
 ];
 

@@ -19,7 +19,7 @@
     margin: 0 auto;
     height: 55vh;
     border: 1px solid black;
-    border-radius: 5%;
+    border-radius: 23px;
 }
 
 .f-row:after {
@@ -140,7 +140,7 @@
 
 @media (max-width:1066px) {
     .f-row{
-        height: 63vh;
+        height: auto;
 
     }
     .get-in-touch .title{
@@ -153,5 +153,14 @@
     .form-button{
         left: 5%;
 
+    }
+}
+
+@media (max-width:635px) {
+    .f-row .col.x-50{
+        width: 100%;
+    }
+    .f-row{
+        border: none;
     }
 }

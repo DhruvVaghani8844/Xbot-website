@@ -7,7 +7,7 @@ import {
   termLinks,
 } from "../../DataSection/FooterSection.d/FooterSection.d";
 
-const FooterSection = () => {
+const FooterSection = ({ scrollToSection, refs }) => {
   return (
     <footer className="f-section text-white">
       <div className="f-container">
@@ -46,7 +46,7 @@ const FooterSection = () => {
                     {navLinks.map((link, index) => (
                       <li className="w-fit" key={index}>
                         <a
-                          href={link.href}
+                          onClick={() => scrollToSection(refs[link.ref])}
                           className="text-grey button_underline f-nav-links"
                         >
                           {link.label}
@@ -88,7 +88,7 @@ const FooterSection = () => {
               </ul>
             </div>
           </div>
-              {/* left Section */}
+          {/* left Section */}
           <div className="f-left-section border-grey">
             <div className="mb-15">
               <h2 className="f-left-decription">Stay in Touch</h2>

@@ -34,7 +34,10 @@ function App() {
         <AboutSection />
       </section>
       <FormSection />
-      <FooterSection />
+      <FooterSection 
+         scrollToSection={scrollToSection}
+        refs={{ featuresRef, aboutRef }}
+      />
     </div>
   );
 }
