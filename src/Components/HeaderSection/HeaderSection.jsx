@@ -36,7 +36,7 @@ const HeaderSection = ({ scrollToSection, refs }) => {
               <a onClick={() => handleNavLinkClick(refs.aboutRef)}>About</a>
               <a href="#">Blog</a>
             </nav>
-            <button className="site-button d-none d-sm-flex">
+            <button className="site-button d-none d-sm-flex" onClick={() => handleNavLinkClick(refs.contactRef)}>
               Get Early Access
             </button>
             <div className="d-block d-sm-none">

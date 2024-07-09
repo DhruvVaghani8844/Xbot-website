@@ -61,7 +61,11 @@ const FooterSection = ({ scrollToSection, refs }) => {
                 <ul className="f-right-social-logo">
                   {socialLinks.map((social, index) => (
                     <li key={index}>
-                      <a href={social.href} className="f-right-social-logos">
+                      <a
+                        href={social.href}
+                        target="_blank"
+                        className="f-right-social-logos"
+                      >
                         <div
                           className="w-24 h-24"
                           dangerouslySetInnerHTML={{ __html: social.svg }}
@@ -89,6 +93,7 @@ const FooterSection = ({ scrollToSection, refs }) => {
             </div>
           </div>
           {/* left Section */}
+         
           <div className="f-left-section border-grey">
             <div className="mb-15">
               <h2 className="f-left-decription">Stay in Touch</h2>
@@ -96,52 +101,11 @@ const FooterSection = ({ scrollToSection, refs }) => {
                 Expand Your Customer Base, Boost Sales, Reconnect with
                 Customers, Recover Abandoned Carts, and More – All on WhatsApp.
               </p>
+              <a href="mailto:hello@xbots.tech" className="text-grey">
+                hello@xbots.tech
+              </a>
             </div>
-            {/* <form action="" className="f-left-section-form">
-              <div className="f-left-form-dec">
-                <div className="f-left-form-input w-full">
-                  <input
-                    className="h-full w-full font-mono text-grey border-grey text-white"
-                    placeholder="Enter email"
-                    type="email"
-                    required
-                  />
-                </div>
-                <button className="f-left-form-button">
-                  SUBMIT
-                  <section className="centered-container">
-                    <a className="link link--arrowed">
-                      <svg
-                        className="arrow-icon"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width={22}
-                        height={22}
-                        viewBox="0 0 32 32"
-                      >
-                        <g
-                          fill="none"
-                          stroke="#fff"
-                          strokeWidth="1.5"
-                          strokeLinejoin="round"
-                          strokeMiterlimit={10}
-                        >
-                          <circle
-                            className="arrow-icon--circle"
-                            cx={16}
-                            cy={16}
-                            r="15.12"
-                          />
-                          <path
-                            className="arrow-icon--arrow"
-                            d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"
-                          />
-                        </g>
-                      </svg>
-                    </a>
-                  </section>
-                </button>
-              </div>
-            </form> */}
+
             <div className="text-grey f-left-term">
               <ul className="text-grey font-mono">
                 {termLinks.map((term, index) => (
