@@ -27,11 +27,11 @@ const UserAcqSection = () => {
                   Xbots is transforming the way businesses acquire new users by
                   connecting with customers where it matters most.
                 </p>
-                {/* <p>
+                <p>
                   Leverage WhatsApp marketing with Xbots to potentially cut
                   Customer Acquisition Costs (CAC) by 50-75% compared to
                   traditional methods.
-                </p> */}
+                </p>
               </div>
               <div className="U-wrapper-items">
                 {/* <div className="U-wrapper-dec">
