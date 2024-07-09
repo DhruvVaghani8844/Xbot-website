@@ -15,7 +15,9 @@ import {
 function App() {
   const featuresRef = useRef(null);
   const aboutRef = useRef(null);
-  // const contactRef = useRef(null)
+  const contactRef = useRef(null)
+
+
   const scrollToSection = (sectionRef) => {
     sectionRef.current.scrollIntoView({ behavior: "smooth" });
   };
@@ -23,7 +25,7 @@ function App() {
     <div className="App">
       <HeaderSection
         scrollToSection={scrollToSection}
-        refs={{ featuresRef, aboutRef }}
+        refs={{ featuresRef, aboutRef, contactRef }}
       />
       <HeroSection />
       <UserAcqSection />
@@ -33,9 +35,11 @@ function App() {
       <section id="about" ref={aboutRef}>
         <AboutSection />
       </section>
-      <FormSection />
-      <FooterSection 
-         scrollToSection={scrollToSection}
+      <section id="contact" ref={contactRef}>
+        <FormSection  />
+      </section>
+      <FooterSection
+        scrollToSection={scrollToSection}
         refs={{ featuresRef, aboutRef }}
       />
     </div>

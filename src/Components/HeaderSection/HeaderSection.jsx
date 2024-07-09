@@ -77,12 +77,15 @@ const HeaderSection = ({ scrollToSection, refs }) => {
                           Features
                         </a>
                       </li>
+                      
                     </ul>
                   </nav>
                   <nav className="site-header_mainMobileNav site-header_secondary">
                     <ul>
                       <li>
-                        <a >Stay in Touch</a>
+                        <a onClick={()=> handleNavLinkClick(refs.contactRef)}>
+                          Stay in Touch
+                        </a>
                       </li>
                     </ul>
                   </nav>

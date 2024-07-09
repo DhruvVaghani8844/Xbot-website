@@ -93,11 +93,11 @@ const FooterSection = ({ scrollToSection, refs }) => {
             <div className="mb-15">
               <h2 className="f-left-decription">Stay in Touch</h2>
               <p className="text-grey f-left-decription-p">
-                Get regular updates about our new hires, technical and business
-                milestones, and ideas in brain–computer interface technology.
+                Expand Your Customer Base, Boost Sales, Reconnect with
+                Customers, Recover Abandoned Carts, and More – All on WhatsApp.
               </p>
             </div>
-            <form action="" className="f-left-section-form">
+            {/* <form action="" className="f-left-section-form">
               <div className="f-left-form-dec">
                 <div className="f-left-form-input w-full">
                   <input
@@ -141,7 +141,7 @@ const FooterSection = ({ scrollToSection, refs }) => {
                   </section>
                 </button>
               </div>
-            </form>
+            </form> */}
             <div className="text-grey f-left-term">
               <ul className="text-grey font-mono">
                 {termLinks.map((term, index) => (
