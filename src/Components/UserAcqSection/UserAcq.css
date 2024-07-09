@@ -218,6 +218,12 @@
 }
 
 
+@media (max-width:768px) {
+    .user-backdrop-section{
+        height: 60vh;
+    }
+}
+
 
 
 @media (max-width:513px) {
