@@ -30,7 +30,9 @@ const HeaderSection = ({ scrollToSection, refs }) => {
               </a>
             </div>
             <nav className="site_header-mainNav d-none d-sm-flex">
-              <a onClick={() => handleNavLinkClick(refs.featuresRef)}>Features</a>
+              <a onClick={() => handleNavLinkClick(refs.featuresRef)}>
+                Features
+              </a>
               <a onClick={() => handleNavLinkClick(refs.aboutRef)}>About</a>
               <a href="#">Blog</a>
             </nav>
@@ -40,7 +42,9 @@ const HeaderSection = ({ scrollToSection, refs }) => {
             <div className="d-block d-sm-none">
               <section className="site-header_small">
                 <button className="site-header_menuBtn">
-                  <label className={`hamburger ${isMobileNavOpen ? "open" : ""}`}>
+                  <label
+                    className={`hamburger ${isMobileNavOpen ? "open" : ""}`}
+                  >
                     <input type="checkbox" />
                     <svg viewBox="0 0 32 32" onClick={toggleMobileNav}>
                       <path
@@ -78,10 +82,7 @@ const HeaderSection = ({ scrollToSection, refs }) => {
                   <nav className="site-header_mainMobileNav site-header_secondary">
                     <ul>
                       <li>
-                        <a href="#">Terms of service</a>
-                      </li>
-                      <li>
-                        <a href="#">Privacy policy</a>
+                        <a >Stay in Touch</a>
                       </li>
                     </ul>
                   </nav>

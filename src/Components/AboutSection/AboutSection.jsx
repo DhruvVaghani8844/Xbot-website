@@ -20,17 +20,17 @@ const AboutSection = () => {
               </div>
               <div className="U-containe about-container">
                 <p>
-                  Xbots, your ultimate WhatsApp marketing platform designed to
+                  Xbots is your ultimate WhatsApp marketing platform designed to
                   generate more leads, reach your customers faster, and drive
                   tremendous growth for your business.
                 </p>
                 <p>
-                  At Xbots, we're not just limited to providing marketing
-                  services. Our platform empowers your business to run
-                  autonomously, leveraging advanced artificial intelligence to
-                  simplify operations and reduce human effort. We are dedicated
-                  to delivering the benefits of automation and AI in the
-                  simplest, most effective way possible.
+                  We're not just limited to providing marketing services. Our
+                  platform empowers your business to run autonomously,
+                  leveraging advanced artificial intelligence to simplify
+                  operations and reduce human effort. We are dedicated to
+                  delivering the benefits of automation and AI in the simplest,
+                  most effective way possible.
                 </p>
                 <p>We are here to simplify your business and your life.</p>
               </div>

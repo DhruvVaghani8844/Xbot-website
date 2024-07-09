@@ -23,7 +23,7 @@ export const featuresData = [
     {
       imgs:fea_01 ,
       title: "FREE WhatsApp Business API",
-      description: "Get Whatsapp Business API Approval in 10 Minutes (FREE with any plan)",
+      description: "Get approved for the WhatsApp Business API in just 10 minutes at no cost.",
     },
     {
       imgs:fea_02 ,
