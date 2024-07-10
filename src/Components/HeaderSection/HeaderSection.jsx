@@ -1,9 +1,12 @@
 import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import "./HeaderSection.css";
 import { xbot_logo } from "../../assets/index.js";
 
 const HeaderSection = ({ scrollToSection, refs }) => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
 
   const toggleMobileNav = () => {
     setIsMobileNavOpen(!isMobileNavOpen);
@@ -14,8 +17,14 @@ const HeaderSection = ({ scrollToSection, refs }) => {
   };
 
   const handleNavLinkClick = (sectionRef) => {
-    scrollToSection(sectionRef);
-    closeMobileNav();
+    if (sectionRef?.current) {
+      if (isHomePage) {
+        scrollToSection(sectionRef);
+      } else {
+        window.location.href = `/#${sectionRef.current.id}`;
+      }
+      closeMobileNav();
+    }
   };
 
   return (
@@ -25,9 +34,9 @@ const HeaderSection = ({ scrollToSection, refs }) => {
         <div className="xbot-container">
           <div className="site-header_foreground">
             <div className="site-header_logo">
-              <a href="/" className="site-header_logoLink">
-                <img src={xbot_logo} alt="" />
-              </a>
+              <Link to="/" className="site-header_logoLink">
+                <img src={xbot_logo} alt="Logo" />
+              </Link>
             </div>
             <nav className="site_header-mainNav d-none d-sm-flex">
               <a onClick={() => handleNavLinkClick(refs.featuresRef)}>
@@ -36,7 +45,10 @@ const HeaderSection = ({ scrollToSection, refs }) => {
               <a onClick={() => handleNavLinkClick(refs.aboutRef)}>About</a>
               <a href="#">Blog</a>
             </nav>
-            <button className="site-button d-none d-sm-flex" onClick={() => handleNavLinkClick(refs.contactRef)}>
+            <button
+              className="site-button d-none d-sm-flex"
+              onClick={() => handleNavLinkClick(refs.contactRef)}
+            >
               Get Early Access
             </button>
             <div className="d-block d-sm-none">
@@ -77,13 +89,12 @@ const HeaderSection = ({ scrollToSection, refs }) => {
                           Features
                         </a>
                       </li>
-                      
                     </ul>
                   </nav>
                   <nav className="site-header_mainMobileNav site-header_secondary">
                     <ul>
                       <li>
-                        <a onClick={()=> handleNavLinkClick(refs.contactRef)}>
+                        <a onClick={() => handleNavLinkClick(refs.contactRef)}>
                           Stay in Touch
                         </a>
                       </li>

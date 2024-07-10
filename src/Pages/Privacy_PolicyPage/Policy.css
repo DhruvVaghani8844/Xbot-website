@@ -1,0 +1,126 @@
+.P-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: white;
+}
+
+.P-section>div {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "aktiv-grotesk", sans-serif;
+}
+
+.P-section h1 {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 62px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.p-wrapper h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
+    line-height: 1.2;
+
+}
+
+.p-wrapper h3{
+    font-weight: 500;
+}
+
+.p-wrapper ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: fit-content;
+    padding: 1rem;
+}
+
+.p-wrapper span {
+    color: #7d7d7d;
+    font-style: italic;
+    cursor: pointer;
+    line-height: 1.5rem;
+    font-weight: 600;
+}
+
+.p-wrapper ul li {
+    color: #7d7d7d;
+    list-style: disc;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.p-wrapper p {
+    color: #7d7d7d;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+.p-secound-ul{
+    line-height: 1.4rem;
+}
+
+
+
+
+@media screen and (max-width: 991px) {
+
+
+    .P-section h1 {
+        font-size: 42px;
+    }
+
+    .P-section>div {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .P-section h3 {
+        font-size: 38px;
+    }
+
+    .p-wrapper h2 {
+
+        font-size: 18px;
+        line-height: 1.8rem;
+
+    }
+
+}
+
+
+@media screen and (max-width: 767px) {
+
+
+    .P-section h1 {
+        margin-top: 5px;
+        font-size: 32px;
+    }
+
+    .P-section>div {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .P-section h3 {
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+
+    .P-section h1 {
+        font-weight: 400;
+    }
+
+    .P-section>div {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

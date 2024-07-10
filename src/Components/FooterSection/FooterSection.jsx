@@ -1,4 +1,7 @@
+// FooterSection.js
+
 import React from "react";
+import { Link } from "react-router-dom";
 import "./FooterSection.css";
 import {
   logoSvg,
@@ -79,21 +82,24 @@ const FooterSection = ({ scrollToSection, refs }) => {
 
             <div className="f-right-term text-grey">
               <ul className="text-grey right-term-container">
-                {termLinks.map((term, index) => (
-                  <li key={index}>
-                    <a
-                      href={term.href}
-                      className="f-nav-links text-grey f-nav-link-tag"
-                    >
-                      {term.label}
-                    </a>
-                  </li>
-                ))}
+                <li>
+                  <Link
+                    to="/privacy-policy"
+                    className="f-nav-links text-grey f-nav-link-tag"
+                  >
+                    Privacy Policy
+                  </Link>
+                </li>
+                <li>
+                  <a className="f-nav-links text-grey f-nav-link-tag">
+                    Terms & Conditions
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
           {/* left Section */}
-         
+
           <div className="f-left-section border-grey">
             <div className="mb-15">
               <h2 className="f-left-decription">Stay in Touch</h2>
@@ -108,16 +114,20 @@ const FooterSection = ({ scrollToSection, refs }) => {
 
             <div className="text-grey f-left-term">
               <ul className="text-grey font-mono">
-                {termLinks.map((term, index) => (
-                  <li key={index}>
-                    <a
-                      href={term.href}
-                      className="f-nav-links text-grey f-nav-link-tag"
-                    >
-                      {term.label}
-                    </a>
-                  </li>
-                ))}
+                <li>
+                  <Link
+                    to="/privacy-policy"
+                    className="f-nav-links text-grey f-nav-link-tag"
+                  >
+                    Privacy Policy
+                  </Link>
+                </li>
+                <li>
+                  <a  className="f-nav-links text-grey f-nav-link-tag">
+                    {" "}
+                    Terms & Conditions
+                  </a>
+                </li>
               </ul>
             </div>
           </div>

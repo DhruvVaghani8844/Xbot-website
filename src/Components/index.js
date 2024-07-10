@@ -5,6 +5,7 @@ import FeaturesSection from "./FeaturesSection/FeaturesSection";
 import FooterSection from "./FooterSection/FooterSection.jsx"
 import AboutSection from "./AboutSection/AboutSection.jsx";
 import FormSection from "./FormSection/FormSection.jsx";
+import PrivacyPolicy from "../Pages/Privacy_PolicyPage/Privacy_Policy.jsx"
 
 export {
     HeaderSection,
@@ -13,5 +14,6 @@ export {
     FeaturesSection,
     FooterSection,
     AboutSection,
-    FormSection
+    FormSection,
+    PrivacyPolicy
 }

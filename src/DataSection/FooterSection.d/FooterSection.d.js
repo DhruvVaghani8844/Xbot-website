@@ -117,7 +117,7 @@ export const socialLinks = [
 ];
 
 export const termLinks = [
-  { label: "Privacy Policy", href: "#" },
-  { label: "Terms & Conditions", href: "#" },
+  { label: "Privacy Policy", to: "/privacy-policy" },
+  { label: "Terms & Conditions" },
   // Add more term links if needed
 ];
