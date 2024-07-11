@@ -194,7 +194,7 @@
         padding-right: 1.875rem;
         border: solid;
         border-width: 0px 1px 0px 0px;
-        
+        font-size: max(14.4px,0.125rem);
         padding-bottom: 0rem;
     }
   

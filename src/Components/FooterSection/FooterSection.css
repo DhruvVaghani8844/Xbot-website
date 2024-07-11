@@ -458,10 +458,16 @@ ul {
     }
 
     .f-left-decription-p {
-        font-size: 10px;
+        font-size: 12px;
+    }
+    .mb-15 a{
+        font-size: 12px;
     }
 
     .f-left-decription {
         font-size: max(32px, 1.5rem);
+    }
+    .w-140 {
+        width: 5.75rem;
     }
 }
