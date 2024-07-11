@@ -74,3 +74,11 @@
         width: 510px;
     }
 }
+
+
+
+@media (max-width:410px) {
+    .about-section-img>img {
+        width: 281px;
+    }
+}
